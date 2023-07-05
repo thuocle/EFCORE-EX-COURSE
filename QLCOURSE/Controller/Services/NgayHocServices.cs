@@ -8,5 +8,6 @@ namespace QLCOURSE.Controller.Services
 {
     public class NgayHocServices
     {
+
     }
 }
