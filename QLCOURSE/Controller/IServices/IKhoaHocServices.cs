@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QLCOURSE.Controller.IServices
 {
-    internal class IKhoaHocServices
+    public interface IKhoaHocServices
     {
     }
 }

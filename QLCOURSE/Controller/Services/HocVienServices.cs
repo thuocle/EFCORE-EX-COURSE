@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QLCOURSE.Controller.Services
 {
-    internal class HocVienServices
+    public class HocVienServices
     {
     }
 }
