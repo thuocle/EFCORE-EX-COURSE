@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QLCOURSE.View
 {
-    internal class KhoaHocView
+    public class KhoaHocView
     {
     }
 }

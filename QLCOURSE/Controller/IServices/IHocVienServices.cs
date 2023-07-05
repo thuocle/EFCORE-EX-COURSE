@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QLCOURSE.Controller.IServices
 {
-    internal class IHocVienServices
+    public interface IHocVienServices
     {
     }
 }
