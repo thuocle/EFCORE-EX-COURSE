@@ -8,5 +8,7 @@ namespace QLCOURSE.Controller.IServices
 {
     public interface IHocVienServices
     {
+        void UpdateStudentInfo(int hvID);
+        void SearchStudentsByName(string tenHV);
     }
 }

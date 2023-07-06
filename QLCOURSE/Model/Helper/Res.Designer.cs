@@ -22,7 +22,7 @@ namespace QLCOURSE.Model.Helper {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Res {
+    public class Res {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace QLCOURSE.Model.Helper {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("QLCOURSE.Model.Helper.Res", typeof(Res).Assembly);
@@ -51,7 +51,7 @@ namespace QLCOURSE.Model.Helper {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,9 +61,18 @@ namespace QLCOURSE.Model.Helper {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Da Ton Tai!.
+        /// </summary>
+        public static string DaTonTai {
+            get {
+                return ResourceManager.GetString("DaTonTai", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dia Chi:.
         /// </summary>
-        internal static string DiaChi {
+        public static string DiaChi {
             get {
                 return ResourceManager.GetString("DiaChi", resourceCulture);
             }
@@ -72,7 +81,7 @@ namespace QLCOURSE.Model.Helper {
         /// <summary>
         ///   Looks up a localized string similar to Co loi khi nhap lieu, hay thu lai!.
         /// </summary>
-        internal static string Error {
+        public static string Error {
             get {
                 return ResourceManager.GetString("Error", resourceCulture);
             }
@@ -81,7 +90,7 @@ namespace QLCOURSE.Model.Helper {
         /// <summary>
         ///   Looks up a localized string similar to Ghi Chu:.
         /// </summary>
-        internal static string GhiChu {
+        public static string GhiChu {
             get {
                 return ResourceManager.GetString("GhiChu", resourceCulture);
             }
@@ -90,7 +99,7 @@ namespace QLCOURSE.Model.Helper {
         /// <summary>
         ///   Looks up a localized string similar to Hoc Phi:.
         /// </summary>
-        internal static string HocPhi {
+        public static string HocPhi {
             get {
                 return ResourceManager.GetString("HocPhi", resourceCulture);
             }
@@ -99,7 +108,7 @@ namespace QLCOURSE.Model.Helper {
         /// <summary>
         ///   Looks up a localized string similar to Ho Ten:.
         /// </summary>
-        internal static string HoTen {
+        public static string HoTen {
             get {
                 return ResourceManager.GetString("HoTen", resourceCulture);
             }
@@ -108,16 +117,25 @@ namespace QLCOURSE.Model.Helper {
         /// <summary>
         ///   Looks up a localized string similar to Khoa Hoc ID:.
         /// </summary>
-        internal static string KhoaHocID {
+        public static string KhoaHocID {
             get {
                 return ResourceManager.GetString("KhoaHocID", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Khong Ton Tai!.
+        /// </summary>
+        public static string KhongTonTai {
+            get {
+                return ResourceManager.GetString("KhongTonTai", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nhap Mo Ta:.
         /// </summary>
-        internal static string MoTa {
+        public static string MoTa {
             get {
                 return ResourceManager.GetString("MoTa", resourceCulture);
             }
@@ -126,7 +144,7 @@ namespace QLCOURSE.Model.Helper {
         /// <summary>
         ///   Looks up a localized string similar to Ngay Bat Dau:.
         /// </summary>
-        internal static string NgayBatDau {
+        public static string NgayBatDau {
             get {
                 return ResourceManager.GetString("NgayBatDau", resourceCulture);
             }
@@ -135,7 +153,7 @@ namespace QLCOURSE.Model.Helper {
         /// <summary>
         ///   Looks up a localized string similar to Ngay Ket Thuc: .
         /// </summary>
-        internal static string NgayKetThuc {
+        public static string NgayKetThuc {
             get {
                 return ResourceManager.GetString("NgayKetThuc", resourceCulture);
             }
@@ -144,7 +162,7 @@ namespace QLCOURSE.Model.Helper {
         /// <summary>
         ///   Looks up a localized string similar to Ngay Sinh:.
         /// </summary>
-        internal static string NgaySinh {
+        public static string NgaySinh {
             get {
                 return ResourceManager.GetString("NgaySinh", resourceCulture);
             }
@@ -153,7 +171,7 @@ namespace QLCOURSE.Model.Helper {
         /// <summary>
         ///   Looks up a localized string similar to Noi Dung:.
         /// </summary>
-        internal static string NoiDung {
+        public static string NoiDung {
             get {
                 return ResourceManager.GetString("NoiDung", resourceCulture);
             }
@@ -162,7 +180,7 @@ namespace QLCOURSE.Model.Helper {
         /// <summary>
         ///   Looks up a localized string similar to Que Quan:.
         /// </summary>
-        internal static string QueQuan {
+        public static string QueQuan {
             get {
                 return ResourceManager.GetString("QueQuan", resourceCulture);
             }
@@ -171,7 +189,7 @@ namespace QLCOURSE.Model.Helper {
         /// <summary>
         ///   Looks up a localized string similar to So Dien Thoai:.
         /// </summary>
-        internal static string SoDienThoai {
+        public static string SoDienThoai {
             get {
                 return ResourceManager.GetString("SoDienThoai", resourceCulture);
             }
@@ -180,9 +198,27 @@ namespace QLCOURSE.Model.Helper {
         /// <summary>
         ///   Looks up a localized string similar to Nhap Ten Khoa Hoc:.
         /// </summary>
-        internal static string TenKhoaHoc {
+        public static string TenKhoaHoc {
             get {
                 return ResourceManager.GetString("TenKhoaHoc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thao tac thanh cong!.
+        /// </summary>
+        public static string ThanhCong {
+            get {
+                return ResourceManager.GetString("ThanhCong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thao tac that bai!.
+        /// </summary>
+        public static string ThatBai {
+            get {
+                return ResourceManager.GetString("ThatBai", resourceCulture);
             }
         }
     }

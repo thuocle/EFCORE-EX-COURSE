@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DaTonTai" xml:space="preserve">
+    <value>Da Ton Tai!</value>
+  </data>
   <data name="DiaChi" xml:space="preserve">
     <value>Dia Chi:</value>
   </data>
@@ -134,6 +137,9 @@
   </data>
   <data name="KhoaHocID" xml:space="preserve">
     <value>Khoa Hoc ID:</value>
+  </data>
+  <data name="KhongTonTai" xml:space="preserve">
+    <value>Khong Ton Tai!</value>
   </data>
   <data name="MoTa" xml:space="preserve">
     <value>Nhap Mo Ta:</value>
@@ -158,5 +164,11 @@
   </data>
   <data name="TenKhoaHoc" xml:space="preserve">
     <value>Nhap Ten Khoa Hoc:</value>
+  </data>
+  <data name="ThanhCong" xml:space="preserve">
+    <value>Thao tac thanh cong!</value>
+  </data>
+  <data name="ThatBai" xml:space="preserve">
+    <value>Thao tac that bai!</value>
   </data>
 </root>

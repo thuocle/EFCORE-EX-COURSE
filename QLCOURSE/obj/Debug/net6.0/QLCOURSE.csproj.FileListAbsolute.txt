@@ -69,3 +69,5 @@ D:\Máy tính\EFCORE-SOLUTION\EFCORE-EX-COURSE\QLCOURSE\obj\Debug\net6.0\refint\
 D:\Máy tính\EFCORE-SOLUTION\EFCORE-EX-COURSE\QLCOURSE\obj\Debug\net6.0\QLCOURSE.pdb
 D:\Máy tính\EFCORE-SOLUTION\EFCORE-EX-COURSE\QLCOURSE\obj\Debug\net6.0\QLCOURSE.genruntimeconfig.cache
 D:\Máy tính\EFCORE-SOLUTION\EFCORE-EX-COURSE\QLCOURSE\obj\Debug\net6.0\ref\QLCOURSE.dll
+D:\Máy tính\EFCORE-SOLUTION\EFCORE-EX-COURSE\QLCOURSE\obj\Debug\net6.0\QLCOURSE.Model.Helper.Res.resources
+D:\Máy tính\EFCORE-SOLUTION\EFCORE-EX-COURSE\QLCOURSE\obj\Debug\net6.0\QLCOURSE.csproj.GenerateResource.cache

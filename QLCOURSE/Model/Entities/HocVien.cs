@@ -36,5 +36,14 @@ namespace QLCOURSE.Model.Entities
         {
             
         }
+        public void UpDate()
+        {
+            KhoaHocID = InputHelper.InputINT(Res.KhoaHocID, Res.Error);
+            HoTen = InputHelper.InputName(Res.HoTen, Res.Error, 1, 20);
+            NgaySinh = InputHelper.InputDT(Res.NgaySinh, Res.Error, new DateTime(1990, 1, 1), new DateTime(2010, 12, 31));
+            DiaChi = InputHelper.InputSTR(Res.DiaChi, Res.Error);
+            QueQuan = InputHelper.InputSTR(Res.QueQuan, Res.Error);
+            SoDienThoai = InputHelper.PhoneNumBer(Res.SoDienThoai, Res.Error);
+        }
     }
 }

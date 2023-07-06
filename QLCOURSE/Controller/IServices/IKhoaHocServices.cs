@@ -10,5 +10,6 @@ namespace QLCOURSE.Controller.IServices
     public interface IKhoaHocServices
     {
         void AddCourse(KhoaHoc kh);
+        void DeleteCourse(int khID);
     }
 }
