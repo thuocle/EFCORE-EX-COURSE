@@ -63,23 +63,18 @@ namespace QLCOURSE.Controller.Services
             var query = from hv in dbContext.HocVien
                         join kh in dbContext.KhoaHoc on hv.KhoaHocID equals kh.KhoaHocID
                         join n in dbContext.NgayHoc on kh.KhoaHocID equals n.KhoaHocID
-                        where hv.HoTen == tenHV
-                        group new { hv, kh, n } by new { hv.HoTen, hv.HocVienID } into gHV
+                        where hv.HoTen.ToLower() == tenHV.ToLower()
+                        group new { hv, kh, n } by new { hv.HoTen, hv.SoDienThoai} into gHV
                         select new
                         {
-                            hoten = gHV.Key.HoTen,
                             khoahoc = gHV.Select(x=> new
                             {
                                 tenkh = x.kh.TenKhoaHoc
                             })
                         };
-            foreach (var item in query)
+            foreach (var item in query.ToList())
             {
-                    Console.WriteLine($"{item.hoten}: ");
-                    foreach (var kh in item.khoahoc)
-                    {
-                        Console.WriteLine($"{kh.tenkh}");
-                    }
+                Console.WriteLine($"- {item.khoahoc.First()}");
             }
         }
     }

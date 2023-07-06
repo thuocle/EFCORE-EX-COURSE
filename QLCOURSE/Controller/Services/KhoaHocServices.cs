@@ -1,11 +1,7 @@
 ﻿using QLCOURSE.Controller.IServices;
 using QLCOURSE.Model.Entities;
 using QLCOURSE.Model.Helper;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QLCOURSE.Controller.Services
 {
@@ -23,7 +19,7 @@ namespace QLCOURSE.Controller.Services
         }
         public void AddCourse(KhoaHoc kh)
         {
-            using(var trans = dbContext.Database.BeginTransaction())
+            using (var trans = dbContext.Database.BeginTransaction())
             {
                 try
                 {
@@ -35,6 +31,7 @@ namespace QLCOURSE.Controller.Services
                     }
                     dbContext.Add(kh);
                     dbContext.SaveChanges();
+                    Console.WriteLine(Res.ThanhCong);
                     trans.Commit();
                 }
                 catch (Exception)
@@ -47,11 +44,11 @@ namespace QLCOURSE.Controller.Services
 
         public void DeleteCourse(int khID)
         {
-            using( var trans = dbContext.Database.BeginTransaction())
+            using (var trans = dbContext.Database.BeginTransaction())
             {
                 try
                 {
-                    if(IsKhoaHoc(khID)== null)
+                    if (IsKhoaHoc(khID) == null)
                     {
                         Console.WriteLine("Khoa hoc" + Res.KhongTonTai);
                         Console.WriteLine(Res.ThatBai);
@@ -68,6 +65,29 @@ namespace QLCOURSE.Controller.Services
                     throw;
                 }
             }
+        }
+
+        public void CalculateRevenueInMonth()
+        {
+            var query = from hv in dbContext.HocVien
+                        join kh in dbContext.KhoaHoc on hv.KhoaHocID equals kh.KhoaHocID
+                        join n in dbContext.NgayHoc on kh.KhoaHocID equals n.KhoaHocID
+                        group new
+                        {
+                            hv,
+                            kh,
+                            n
+                        } by new
+                        {
+                            kh.KhoaHocID
+                        } into gDoanhThu
+                        select new
+                        {
+                            doanhThu = gDoanhThu.Sum(x => x.kh.HocPhi)
+                        };
+            var lst = query.ToList();
+           
+            Console.WriteLine("Doanh thu cac thang cua trung tam: " + lst.Sum(x=>x.doanhThu)+"000VND");
         }
     }
 }

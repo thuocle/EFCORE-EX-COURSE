@@ -37,6 +37,7 @@ namespace QLCOURSE.Controller.Services
                     }
                     dbContext.Add(n);
                     dbContext.SaveChanges();
+                    Console.WriteLine(Res.ThanhCong);
                     trans.Commit();
                 }
                 catch (Exception)

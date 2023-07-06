@@ -11,5 +11,6 @@ namespace QLCOURSE.Controller.IServices
     {
         void AddCourse(KhoaHoc kh);
         void DeleteCourse(int khID);
+        void CalculateRevenueInMonth();
     }
 }
