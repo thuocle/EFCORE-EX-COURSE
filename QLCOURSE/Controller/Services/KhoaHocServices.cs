@@ -71,7 +71,8 @@ namespace QLCOURSE.Controller.Services
         {
             var query = from hv in dbContext.HocVien
                         join kh in dbContext.KhoaHoc on hv.KhoaHocID equals kh.KhoaHocID
-                        join n in dbContext.NgayHoc on kh.KhoaHocID equals n.KhoaHocID
+                        join n in dbContext.NgayHoc on kh.KhoaHocID equals n.KhoaHocID 
+                        orderby kh.NgayBatDau
                         group new
                         {
                             hv,
@@ -79,15 +80,23 @@ namespace QLCOURSE.Controller.Services
                             n
                         } by new
                         {
-                            kh.KhoaHocID
-                        } into gDoanhThu
+                           Months = kh.NgayBatDau.Month
+                        } into gDoanhThu 
                         select new
                         {
+                            Thang = gDoanhThu.Key.Months,
                             doanhThu = gDoanhThu.Sum(x => x.kh.HocPhi)
                         };
-            var lst = query.ToList();
-           
-            Console.WriteLine("Doanh thu cac thang cua trung tam: " + lst.Sum(x=>x.doanhThu)+"000VND");
+            foreach (var item in query)
+            {
+                Console.WriteLine($"Thang {item.Thang}:");
+                Console.WriteLine(item.doanhThu + "000VND");
+            }
+            Console.WriteLine("Tong doanh thu cua trung tam: " + query.Sum(x=>x.doanhThu)+"000VND");
+        }
+        public void CalculateRevenueInMonth2()
+        {
+        
         }
     }
 }
